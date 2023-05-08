@@ -20,11 +20,8 @@ class Book(Base):
     published_date = Column('Published', Date)
     price = Column('Price', Integer)
 
-
-def __repr__(self):
-    return f'Title: {self.title} Author: {self.author} Published: {self.published_date} Price: {self.price}'
-
-
+    def __repr__(self):
+        return f'Title: {self.title} Author: {self.author} Published: {self.published_date} Price: {self.price}'
 # books.dp
 # create a model
 # title, author, date_published, price
